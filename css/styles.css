@@ -14,14 +14,11 @@
    font-family: Roboto, sans-serif;
    margin: 0;
 }
-.button{
-  text-decoration: none;
-  font-family: 'Roboto';
-  font-style: normal;
-  cursor: pointer;
-}
+
 .list {
   list-style: none;
+  margin: 0; /* скинув всі відступи у рядкових елементах*/
+  padding: 0;
 }
 .logo{
    font-family: 'Raleway';
@@ -45,6 +42,8 @@
    line-height: 1.14;
    letter-spacing: 0.02em;
    text-decoration: none;
+  
+ 
  }
 .site-nav .link:focus,
 .site-nav .link:hover
@@ -64,6 +63,8 @@
    letter-spacing: 0.02em;
    text-decoration: none;
    color: var(--title-text-color);
+   
+   
  }
  .contact-nav .link:focus,
  .contact-nav .link:hover
@@ -71,37 +72,76 @@
    color: var(--secondary-color);
  }
  .main{
-   background: #2F303A;
+  
+  background: #2F303A;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
  }
  .main, .text{
-   color:  var(--primary-withe-color);
-   font-weight: 900;
-   font-size: 44px;
-   line-height: 1.36;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:  var(--primary-withe-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    
  }
  
+ /*
  .main, .launch{
    color:  var(--primary-withe-color);
  }
+ */
+ .button-one{
+  color: var(--primary-withe-color);
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer; 
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: transparent;
+  margin-top: 30px;
+  
+}
 /* портфоліо*/
 .portfolio-button{
 
 list-style: none;
+
   
 }
 .button-primary{
-   color: #ffffff;
-   background-color: #2196F3;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.87;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   letter-spacing: 0.06em;
-   cursor: pointer;
+  color: var(--primary-withe-color);
+  background-color: #2196F3;
+  width: 73px;
+  height: 38px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer; 
+  border-radius: 4px;
+  padding: 6px 25px;
+  border: transparent;
+ 
+   
 }
 .button-secondary{
   font-family: 'Roboto';
@@ -110,10 +150,13 @@ list-style: none;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #F5F4FA;
+  background-color: var(--button-color);
   cursor: pointer;
   text-decoration: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: transparent;
+
 }
 
 .button-secondary:focus,
@@ -170,6 +213,8 @@ list-style: none;
     font-size: 14px;
     line-height: 1.71;  
     letter-spacing: 0.03em;
+    
+    
  }
  .features
  { 
@@ -181,7 +226,7 @@ list-style: none;
  }
 
  .footer{
-   background: #2F303A
+   background: #2F303A;
  }
  .footer .logo-studio{
    font-family: 'Raleway';
